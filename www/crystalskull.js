@@ -55,7 +55,7 @@ function setup(){
   });
   engine.scene.add(model);
 
-  document.onmousemove = onMouseMove;
+  document.addEventListener('click', onClick, false);
 
   draw();
 
@@ -67,7 +67,7 @@ function setup(){
   });
 }
 
-function onMouseMove(e) {
+function onClick(e) {
   mx = (e.clientX / window.innerWidth) * 2 - 1;
   my = (e.clientY / window.innerHeight) * 2 - 1;
   if(isNaN(mx)) mx = 0;
@@ -97,6 +97,9 @@ function draw() {
 window.onload = function(){
 
   document.getElementById('pickButton').addEventListener('click', function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+
     var pick = new MozActivity({
       name: "pick",
       data: {
