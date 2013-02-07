@@ -8,6 +8,6 @@ html, body {
 #pickButton {
   position: absolute;
   bottom: 0;
-  height: 20vh;
+  height: 4em;
   width: 100%;
 }
