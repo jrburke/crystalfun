@@ -1,0 +1,33 @@
+{
+  "name": "CrystalFun",
+  "description": "WebGL Demo",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "The J3D Team",
+    "url": "https://github.com/mozilla-b2g/gaia"
+  },
+  "locales": {
+    "ar": {
+      "name": "CrystalFun",
+      "description": " WebGL \u0639\u0631\u0636"
+    },
+    "en-US": {
+      "name": "CrystalFun",
+      "description": "WebGL Demo"
+    },
+    "fr": {
+      "name": "CrystalFun",
+      "description": "D\u00e9mo WebGL"
+    },
+    "zh-TW": {
+      "name": "CrystalFun",
+      "description": "WebGL \u793a\u7bc4"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "120": "/style/icons/Crystalskull.png",
+    "60": "/style/icons/60/Crystalskull.png"
+  },
+  "orientation": "portrait-primary"
+}

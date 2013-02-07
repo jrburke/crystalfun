@@ -1,0 +1,11 @@
+/*jslint node: true, regexp: true */
+'use strict';
+
+var fs = require('fs'),
+    path = require('path'),
+    pagesDir = 'www-ghpages';
+
+module.exports = {
+    //Deploys the code to github pages.
+    ghdeploy: require('volo-ghdeploy')('www', pagesDir)
+};
